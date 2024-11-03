@@ -29,7 +29,7 @@ Finally, to train a new network from scratch, run
 python train.py --config configs/256res/ffhq_256_sdf_ngp.yaml --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
 
-The output file is `./out/ffhq256_sdf_ngp `. We have prepared a pretrained model  for direct using. Please place it under `./out/ffhq256_sdf_ngp/full_pipeline.pt`.
+The output file is `./out/ffhq256_sdf_ngp `. We have prepared a [pretrained model](https://drive.google.com/file/d/1HkevHMk0lVnSLJ5rKlDJjJ90DIQ2PVdO/view?usp=drive_link) for direct using. Please place it under `./out/ffhq256_sdf_ngp/full_pipeline.pt`.
 
 ### Multi-view images and 3D mesh generation
 
