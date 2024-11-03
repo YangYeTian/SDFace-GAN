@@ -30,7 +30,7 @@ For training of the models, we provide the script `train.py`. You can run it usi
 python train.py --config configs/256res/ffhq_256_sdf_ngp.yaml --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
 
-The results of the operation will be saved in `./out/ffhq256_sdf_ngp/ `. 
+The results of the operation will be saved in `./out/ffhq256_sdf_ngp/`. 
 We have prepared a [pretrained model](https://drive.google.com/file/d/1HkevHMk0lVnSLJ5rKlDJjJ90DIQ2PVdO/view?usp=drive_link) for direct using. Please place it under `./out/ffhq256_sdf_ngp/full_pipeline.pt`.
 
 ### Multi-view images and 3D mesh generation
@@ -39,7 +39,7 @@ To render images and 3D mesh, run
 ```
 python sdf_mesh.py --config configs/256res/ffhq_256_sdf_ngp.yaml  --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
-The results of the operation will be saved in `./out/ffhq256_sdf_ngp/rendering/ `.
+The results of the operation will be saved in `./out/ffhq256_sdf_ngp/rendering/`.
 
 ### Evaluating
 
