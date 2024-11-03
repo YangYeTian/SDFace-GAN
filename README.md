@@ -19,25 +19,27 @@ Then install [pytorch3d 0.6.1](https://github.com/facebookresearch/pytorch3d)
 
 ### Datasets
 
-The data that support the findings of this study are openly available at [FFHQ](https://github.com/NVlabs/ffhq-dataset) and [CelebaHq](https://github.com/tkarras/progressive_growing_of_gans).
+The data that support the findings of this study are openly available at [FFHQ](https://github.com/NVlabs/ffhq-dataset) and [CelebaHq](https://github.com/tkarras/progressive_growing_of_gans). Please place them under `./data/` for training.
+
 
 ### Training
 
-Finally, to train a new network from scratch, run
+For training of the models, we provide the script `train.py`. You can run it using
 
 ```
 python train.py --config configs/256res/ffhq_256_sdf_ngp.yaml --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
 
-The output file is `./out/ffhq256_sdf_ngp `. We have prepared a [pretrained model](https://drive.google.com/file/d/1HkevHMk0lVnSLJ5rKlDJjJ90DIQ2PVdO/view?usp=drive_link) for direct using. Please place it under `./out/ffhq256_sdf_ngp/full_pipeline.pt`.
+The results of the operation will be saved in `./out/ffhq256_sdf_ngp/ `. 
+We have prepared a [pretrained model](https://drive.google.com/file/d/1HkevHMk0lVnSLJ5rKlDJjJ90DIQ2PVdO/view?usp=drive_link) for direct using. Please place it under `./out/ffhq256_sdf_ngp/full_pipeline.pt`.
 
 ### Multi-view images and 3D mesh generation
 
-To render images of a trained model, run
+To render images and 3D mesh, run
 ```
 python sdf_mesh.py --config configs/256res/ffhq_256_sdf_ngp.yaml  --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
-The output file is `./out/ffhq256_sdf_ngp/rendering `.
+The results of the operation will be saved in `./out/ffhq256_sdf_ngp/rendering/ `.
 
 ### Evaluating
 
