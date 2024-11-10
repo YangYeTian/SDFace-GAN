@@ -19,7 +19,7 @@ Then install [pytorch3d 0.6.1](https://github.com/facebookresearch/pytorch3d)
 
 ### Datasets
 
-The data that support the findings of this study are openly available at [FFHQ](https://github.com/NVlabs/ffhq-dataset) and [CelebaHq](https://github.com/tkarras/progressive_growing_of_gans). Please place them under `./data/` for training.
+The data that support the findings of this study are openly available at [FFHQ](https://github.com/NVlabs/ffhq-dataset) and [CelebaHq](https://github.com/tkarras/progressive_growing_of_gans). Please place them under `./data/` and run `prepare_data.py` for training.
 
 
 ### Training
@@ -35,7 +35,7 @@ We have prepared a [pretrained model](https://drive.google.com/file/d/1HkevHMk0l
 
 ### Multi-view images and 3D mesh generation
 
-To render images and 3D mesh, run
+To render images and 3D mesh, please ensure that `./out/ffhq256_sdf_ngp/full_pipeline.pt` is configured and run
 ```
 python sdf_mesh.py --config configs/256res/ffhq_256_sdf_ngp.yaml  --sdf 1 --ngp 1 --fc 0 --wod 0
 ```
