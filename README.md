@@ -1,4 +1,4 @@
-# SDFace-GAN: Lightweight 3D-Aware Generative Adversarial Network for Facial Image and Geometry Synthesis
+# SDFace-GAN: An Efficient 3D-Aware Generative Adversarial Network for Facial Image and Geometry Synthesis
 
 ![](pic.jpg)
 
